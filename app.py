@@ -25,7 +25,7 @@ target_lang_name = st.selectbox("Translate To:", list(languages.keys()))
 target_lang_code = languages[target_lang_name]
 
 # Note about male/female voice
-st.info("⚠️ Male/Female voice is not available online. For English, offline pyttsx3 can use male/female locally.")
+#st.info("⚠️ Male/Female voice is not available online. For English, offline pyttsx3 can use male/female locally.")
 
 # Generate button
 if st.button("Generate Audio"):
@@ -48,3 +48,4 @@ if st.button("Generate Audio"):
     # Cleanup
     if os.path.exists(temp_path):
         os.remove(temp_path)
+
