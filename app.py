@@ -8,7 +8,7 @@ st.set_page_config(page_title="Text → Speech + Translation", page_icon="🎙�
 st.title("🎙️ Text to Speech + Translation")
 
 # Input text
-text_input = st.text_area("Enter text:", "Welcome to Naresh Technology Data Science Programme!", height=120)
+text_input = st.text_area("Enter text:", "Welcome to my text-to-speech application!", height=120)
 
 # Language selection
 languages = {
@@ -48,4 +48,5 @@ if st.button("Generate Audio"):
     # Cleanup
     if os.path.exists(temp_path):
         os.remove(temp_path)
+
 
